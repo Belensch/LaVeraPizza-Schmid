@@ -1,8 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: url(../img/fondo3.jpg);
     background-size: cover;
-    margin: 0px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
@@ -39,29 +46,154 @@ a {
     margin: 1em;
 }
 
+.headerPromos img {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
 
-/* .headerImagen {
-    display: block;
+.MainVideo {
+    display: flex;
+    width: 90%;
+}
+
+.texto {
+    justify-content: center;
+    margin: 10px;
+}
+
+
+/* --------------------------------- INDEX GRID --------------------------------- */
+
+.padre {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" ". logo ." ". logo aside" " texto video aside" ". . aside" "footer footer footer";
+}
+
+#header {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-size: cover;
+}
+
+#logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#video {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
     align-items: center;
-} */
+    margin-bottom: 20px;
+}
 
+#texto {
+    grid-area: texto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
-/* --------------------------------- MAIN-1 --------------------------------- */
+#footer {
+    grid-area: footer;
+}
 
-.headerPromos {
+.contedido {
     display: flex;
 }
 
-.headerPromos img {
-    width: 30%;
-    height: 30%;
+.headerPromos {
+    display: flex;
     align-items: center;
 }
 
 .MainVideo {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .padre {
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        grid-template-areas: "header header" "logo aside" "video aside" "texto texto" "footer footer";
+    }
+    #logo {
+        display: flex;
+        justify-content: center;
+    }
+    #aside {
+        display: flex;
+        flex-direction: column;
+    }
+    #video {
+        margin-left: 20px;
+    }
+    #texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .padre {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "logo" "video" "texto" "aside" "footer";
+    }
+    #logo {
+        justify-content: center;
+    }
+    #texto {
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    #video {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    #aside {
+        display: flex;
+        width: 50%;
+        margin-left: 30%;
+    }
+    #footer {
+        font-size: 20px;
+    }
+}
+
+
+/* ---------------------------------- CONTACTO --------------------------------- */
+
+.main {
+    display: flex;
+    gap: 30px;
 }
 
 
@@ -73,4 +205,310 @@ a {
     color: #ffffff;
     text-decoration: none;
     background: rgb(0, 0, 0, .5);
+}
+
+
+/* --------------------------------- PROMOCIONES GRIT--------------------------------- */
+
+.contenedorPromo {
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    grid-template-rows: auto;
+    grid-template-areas: "headerP headerP headerP" ". logoP ." " . titulo ." " tabla1 tabla2 tabla3" ". img ." "footerP footerP footerP";
+}
+
+#headerPromo {
+    grid-area: headerP;
+    display: flex;
+    grid-column-start: 1;
+}
+
+#logoPromo {
+    grid-area: logoP;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    text-align: justify;
+    font-size: 20PX;
+}
+
+#promoImg {
+    grid-area: img;
+}
+
+#tabla1 {
+    grid-area: tabla1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tabla2 {
+    grid-area: tabla2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tabla3 {
+    grid-area: tabla3;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+
+#footerPromo {
+    grid-area: footerP;
+}
+
+
+/* responsive PRMOCIONES */
+
+@media (max-width: 768px) {
+    .contenedorPromo {
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto;
+        grid-template-areas: "headerP headerP" "logoP img" "titulo tabla1" "tabla3 tabla2" "footerP footerP";
+    }
+    #logoP {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #img {
+        display: flex;
+        flex-direction: column;
+        width: 60%
+    }
+    #titulo {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    #tabla1 {
+        display: flex;
+        align-items: center;
+    }
+    #tabla2 {
+        display: flex;
+    }
+    #tabla3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #footerP {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedorPromo {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "headerP" "logoP" "titulo" "tabla1" "tabla2" "tabla3" "img" "footerP";
+        font-size: 20px;
+    }
+    #headerP {
+        display: flex;
+    }
+    #logoP {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+    }
+    #promoImg img {
+        width: 70%;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    #titulo {
+        font-size: 20px;
+        justify-content: center;
+    }
+    #tabla1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #tabla2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #tabla3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #footerP {
+        display: flex;
+        flex-direction: row;
+        font-size: 18;
+    }
+}
+
+
+/* --------------------------------- Contacto GRIT--------------------------------- */
+
+#contenedorC {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "headerC headerC headerC headerC" ". logoCont logoCont ." ". mainC mapa ." " footerC footerC footerC footerC";
+}
+
+#headerC {
+    grid-area: headerC;
+    display: flex;
+}
+
+#logoCont {
+    grid-area: logoCont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainC {
+    grid-area: mainC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mapa {
+    grid-area: mapa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footerC {
+    grid-area: footerC;
+}
+
+
+/* responsive CONTACTO */
+
+@media (max-width: 768px) {
+    #contenedorC {
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "headerC headerC headerC" ". logoCont ." ". mainC ." ". mapa . " "footerC footerC footerC";
+    }
+}
+
+@media (max-width: 480px) {
+    #contenedorC {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "headerC " "mapa " "mainC" "footerC";
+    }
+}
+
+
+/* --------------------------------- ANIMACIONES--------------------------------- */
+
+.headerlogo:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+    transform: translate(5px, -5px);
+}
+
+.headerPromos:hover {
+    transform: translate(10px, -25px);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.texto:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+}
+
+@keyframes navAnim {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.headerLista li a:hover {
+    animation-name: navAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+.carta:hover {
+    transform: rotateY(45deg);
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#textoM:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+}
+
+.logoPromo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.promoImg:hover {
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.servAnim:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: cubic-bezier(30px);
+}
+
+.servAnim img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.animate :hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+}
+
+.mainContacto :hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
 }
