@@ -8,11 +8,14 @@
     <script src="https://kit.fontawesome.com/c275edd9db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header class="header">
-        <!-- inicia nav -->
+        <!-- inicia nav
         <nav>
             <a href="../index.html" class="headerlogo">
                 <h1>La Nueva Vera Pizza</h1>
@@ -28,15 +31,126 @@
         </nav>
         <!-- ends nav -->
 
+        <!-- inicia nav -->
+
+        <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-url(../img/fondo3.jpg)">
+            <div class="container-fluid">
+                <a class="navbar-brand headerlogo" href="../index.html" class="headerlogo">
+                    <h1>La Vera Pizza</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 headerLista">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../Paginas/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Paginas/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../Paginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../Paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../Paginas/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="https://www.coderhouse.com/" target="_blank">Coderhouse</a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-<<<<<<< HEAD
-    <div><img src="../img/header.jpg" alt="pizzas estilo italiano" width="100%"></div>
-    <h2> Servicio para eventos. </h2>
-    <h3>CATERING</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut non repellendus impedit quas voluptates, aspernatur, unde omnis illum quasi tenetur nobis! Illum dolore temporibus, autem fuga minima impedit corrupti esse. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Autem modi veritatis assumenda maxime architecto tempora, repellat a quae voluptatem laborum delectus incidunt esse placeat excepturi non necessitatibus voluptatum! Reprehenderit, laudantium?
-    </p>
+    <!-- ends nav -->
+
+
+    </header>
+
+    <!-- Inicia carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../img/Captura.PNG" class="d-block w-100 " alt="logo la vera pizza">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="../img/cateringCasamiento.jpeg" class="d-block w-100" alt="caterin casamiento">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/pizzaParty.jpg" class="d-block w-100" alt="Promos en Catering para eventos">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/curso2.jpg" class="d-block w-100" alt="Promos en Catering para eventos">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/catering002.jpg" class="d-block w-100" alt="Promos en Catering para eventos">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- end carousel -->
+    <!-- inicia cursos -->
+    <div>
+        <h1 class="text-center text-uppercase text-light">Todas nuestras propuestas para vos. </h1>
+
+        <p class="text-center  text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut non repellendus impedit quas voluptates, aspernatur, unde omnis illum quasi tenetur nobis! Illum dolore temporibus, autem fuga minima impedit corrupti esse. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Autem modi veritatis assumenda maxime architecto tempora, repellat a quae voluptatem laborum delectus incidunt esse placeat excepturi non necessitatibus voluptatum! Reprehenderit, laudantium?
+        </p>
+    </div>
+
+    <section class="py-3 bg ligth">
+
+        <div class="div container-fluid">
+            <div class="row text-center text-light">
+                <article class="col-md-6 col-lg3 mb-2 ">
+                    <img src="../img/cateringCasamiento.jpeg" alt="catering para casamientos" class="w-100">
+                    <h3>Caterin Para eventos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum accusantium voluptatem temporibus totam facilis hic non consectetur eius quas quidem explicabo, corporis odit, eligendi obcaecati, sint ipsam ratione impedit perspiciatis.</p>
+                    <a href="" class="btn btn-secondary w-100">Mas info</a>
+                </article>
+                <!-- end caterin -->
+                <article class="col-md-6 col-lg3 mb-5">
+                    <img src="../img/vino-pizza.jpg" alt="curso Maridaje" class="w-100">
+                    <h3>PROXIMAMENTE: Curso de maridaje.</h3>
+                    <p>Pizza y vino forman una combinación perfecta, pero es importante conseguir el maridaje correcto. Algunos de los vinos que puedes elegir para maridar con pizza incluyen vinos tintos, vinos espumosos e incluso algunos vinos blancos para
+                        tipos específicos de pizza. Éstos son algunos de los mejores vinos a tener en cuenta para combinar cuando tienes una cita de pizza el viernes por la noche</p>
+                    <a href="" class="btn btn-secondary w-100">Mas info</a>
+                </article>
+                <!-- end maridaje -->
+
+                <article class="col-md-6 col-lg3 mb-2">
+                    <img src="../img/cursoCocina.jpg" alt="curso de cocina" class="w-100">
+                    <h3>Curso de cocina. Aprende a cocinar los mejores platos italianos!!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum accusantium voluptatem temporibus totam facilis hic non consectetur eius quas quidem explicabo, corporis odit, eligendi obcaecati, sint ipsam ratione impedit perspiciatis.</p>
+                    <a href="" class="btn btn-secondary w-100">Mas info</a>
+                </article>
+                <!-- end curso -->
+                <article class="col-md-6 col-lg3 mb-2">
+                    <img src="../img/cursoCook.jpg" alt="cheff a domicilio" class="w-100">
+                    <h3>Cheff a domicilio</h3>
+                    <p> Cheff en tu casa, para tu cumpleaños,evento ejecutivo o dia especial.</p>
+                    <a href="" class="btn btn-secondary w-100">Mas info</a>
+                </article>
+                <!-- end cheff a domic -->
+
+
+            </div>
+        </div>
+
+        <!-- </section>
     <img src="../img/cateringCasamiento.PNG" alt="Catering Para eventos">
     <img src="../img/cateringCasamiento.PNG" alt="Catering Para eventos">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis cupiditate quaerat excepturi totam? Earum ex, natus beatae animi iure ut quam. Id sunt excepturi unde repudiandae sit ipsum iusto quo.</p>
@@ -48,8 +162,7 @@
         consectetur adipisicing elit. Nisi, a praesentium officia, rerum cupiditate ducimus atque explicabo harum animi tempore, minima quidem amet modi nihil ullam. Ut eaque incidunt ullam.
     </p>
     <img src="../img/cursoCocina.jpg" alt="Curso de cocina">
-    <img src="../img/cursoCocina.jpg" alt="Curso de cocina">
-=======
+    <img src="../img/cursoCocina.jpg" alt="Curso de cocina"> =======
     <img src="../img/header.jpg" alt="pizzas estilo italiano" width="100%">
     <div class="servAnim">
         <h2> Servicio para eventos. </h2>
@@ -69,22 +182,24 @@
         </p>
         <img src="../img/cursoCocina.jpg" alt="Curso de cocina">
         <img src="../img/cursoCocina.jpg" alt="Curso de cocina"></div>
->>>>>>> animaciones
+    >>>>>>> animaciones -->-->
 
 
-    <footer class="footer">
-        <h3>Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</h3>
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram">
+        <footer class="footer">
+            <p> Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</p>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram">
         
         </i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
-        <p><img src="img/telefono.PNG" alt="llamanos" width="40rem"> Tel: 0261-4360653 / 0261 65656566
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
+            <p> Tel: 0261-4360653 / 0261 65656566
 
-        </p>
-    </footer>
+            </p>
+        </footer>
+        <!--  JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

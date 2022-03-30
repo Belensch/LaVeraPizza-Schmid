@@ -8,6 +8,10 @@
     <script src="https://kit.fontawesome.com/c275edd9db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
 </head>
 
 
@@ -15,9 +19,11 @@
 <body>
     <div class="padre">
         <!-- ------------------------------- header -------------------------------- -->
-        <header class="header" id="header">
-            <!-- inicia nav -->
-            <nav>
+        <header class="header">
+
+
+            <!--nav viejo 
+                <nav>
                 <a href="index.html" class="headerlogo">
                     <h1>La Vera Pizza</h1>
                 </a>
@@ -29,60 +35,130 @@
                     <li><a href="../Paginas/contacto.html #contacto">Contacto</a></li>
                     <li><a href="https://www.coderhouse.com/" target="_blank">Coderhouse</a></li>
                 </ul>
+            </nav> -->
+
+            <!-- inicia nav -->
+
+            <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-url(../img/fondo3.jpg)">
+                <div class="container-fluid">
+                    <a class="navbar-brand headerlogo" href="index.html" class="headerlogo">
+                        <h1>La Vera Pizza</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 headerLista">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./Paginas/menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Paginas/promociones.html">Promociones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./Paginas/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./Paginas/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="./Paginas/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="https://www.coderhouse.com/" target="_blank">Coderhouse</a>
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <!-- ends nav -->
         </header>
 
-
+        <!-- ends nav -->
 
         <!-- -------------------------------- Main --------------------------------- -->
 
+        <!-- Inicia carousel -->
 
 
-
-        <div class="logo" id="logo"><img src="img/Captura.PNG" alt="logo la vera pizza"></div>
+        <!-- <div class="logo" id="logo"><img src="img/Captura.PNG" alt="logo la vera pizza"></div>
         <div class="headerPromos" id="aside">
             <img src="img/promoCatering.PNG" alt="Happy hour hasta las 21hs">
             <img src="img/promoCatering.PNG" alt="Promo pizza libre">
             <img src="img/promoCurso.png" alt="Promo curso del mes">
+        </div> -->
+
+        <!-- Inicia carousel -->
+        <div class="cajaCarousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="img/Captura.jpg" class="d-block w-100 " alt="logo la vera pizza">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/header007.jpg" class="d-block w-100" alt="Happy hour hasta las 21hs">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/header001.jpg" class="d-block w-100" alt="Promos en Catering para eventos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/header008.jpg" class="d-block w-100" alt="Promos en Catering para eventos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/header009.jpg" class="d-block w-100" alt="Promos en Catering para eventos">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </div>
+        <!-- end carousel -->
+
+
+        <div class="MainVideo"> </div>>
+        <iframe src="https://www.youtube.com/embed/ywrLSeDVH5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="texto">
+        <p>
+            <h2>Sumate a nuestro club </h2>
+            <h3>y obtene descuentos y promociones exclusivas todas las semanas</h3>
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos impedit a amet consectetur ea cum, alias eligendi eveniet earum hic minima beatae, quos tempore vitae voluptates blanditiis sint delectus velit?
+        </p>
+    </div>
 
 
 
-        <div class="MainVideo" id="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ywrLSeDVH5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <img src="img/" alt="">
-        <div class="texto" id="texto">
-            <p>
-                <h2>Sumate a nuestro club </h2>
-                <h3>y obtene descuentos y promociones exclusivas todas las semanas</h3>
-                <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos impedit a amet consectetur ea cum, alias eligendi eveniet earum hic minima beatae, quos tempore vitae voluptates blanditiis sint delectus velit?
-            </p>
-        </div>
+    <!-- -------------------------------- footer --------------------------------- -->
 
 
-
-        <!-- -------------------------------- footer --------------------------------- -->
-
-
-        <footer class="footer" id="footer">
-            <h3>Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</h3>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram">
+    <footer class="footer" id="footer">
+        <p> Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</p>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram">
         
         </i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
-            <p> Tel: 0261-4360653 / 0261 65656566
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
+        <p> Tel: 0261-4360653 / 0261 65656566
 
-            </p>
-            <p>Desarrollado por Belen Schmid. Derechos reservados</p>
-        </footer>
+        </p>
+        <p>Desarrollado por Belen Schmid. Derechos reservados</p>
+    </footer>
 
-        <!-- ------------------------------- footer -------------------------------- -->
+    <!-- ------------------------------- footer -------------------------------- -->
     </div>
+    <!--  JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
