@@ -1,6 +1,8 @@
+ @import url(https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap);
  * {
      margin: 0px;
      padding: 0px;
+     font-family: 'Montserrat', sans-serif;
  }
  
  body {
@@ -412,6 +414,11 @@
  }
  /* --------------------------------- MENU GRIT--------------------------------- */
  
+ .contenedorM {
+     background-image: url(../img/fondo2.PNG);
+     background-size: auto
+ }
+ 
  #contenedorM {
      display: grid;
      grid-template-columns: repeat(4 1fr);
@@ -426,6 +433,19 @@
      text-align: center;
      color: #ffffff;
      text-decoration: none;
+ }
+ 
+ .btn-danger {
+     color: white;
+     background-color: #ff6347;
+     border-color: #ff6347;
+ }
+ 
+ .btn-danger:hover {
+     color: #ffffff;
+     background-color: #ff6347;
+     border-color: #ff6347;
+     transform: scale (0.6);
  }
  /* --------------------------------- HEADER --------------------------------- */
  
@@ -787,16 +807,15 @@
  #mainC {
      grid-area: mainC;
      display: flex;
-     justify-content: center;
-     align-items: center;
      flex-direction: column;
+     flex-wrap: wrap;
  }
  
  #mapa {
      grid-area: mapa;
      display: flex;
      justify-content: center;
-     align-items: center;
+     align-items: flex-start;
      flex-direction: column;
  }
  
@@ -820,6 +839,7 @@
          grid-template-areas: "headerC " "mapa " "mainC" "footerC";
      }
  }
+ /* --------------------------------- NOSOTROS--------------------------------- */
  /* --------------------------------- ANIMACIONES--------------------------------- */
  
  .headerlogo:hover {
@@ -863,10 +883,10 @@
  }
  
  .carta:hover {
-     transform: rotateY(45deg);
-     transform: rotatey(360deg);
-     cursor: pointer;
+     transform: scale(1.5);
+     cursor: zoom-in;
      transition: all 1s;
+     border-color: 2px #ff6347;
  }
  
  #textoM:hover {

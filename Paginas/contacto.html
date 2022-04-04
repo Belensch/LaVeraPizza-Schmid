@@ -16,23 +16,6 @@
 <body id="contenedorC">
     <header class="header" id="headerC">
 
-        <!-- inicia nav vieja
-        <nav>
-            <a href="../index.html" class="headerlogo">
-                <h1>La Nueva Vera Pizza</h1>
-            </a>
-            <ul class="headerLista">
-                <li><a href="../Paginas/menu.html"> Menu</a></li>
-                <li><a href="../Paginas/promociones.html">Promociones</a></li>
-                <li><a href="../Paginas/servicios.html">Servicios</a></li>
-                <li><a href="../Paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="../Paginas/contacto.html #contacto">Contacto</a></li>
-                <li><a href="https://www.coderhouse.com/" target="_blank">Coderhouse</a></li>
-            </ul>
-        </nav>
-         ends nav -->
-        <!-- inicia nav -->
-
         <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-url(../img/fondo3.jpg)">
             <div class="container-fluid">
                 <a class="navbar-brand headerlogo" href="../index.html" class="headerlogo">
@@ -70,152 +53,96 @@
 
     <!-- ends nav -->
 
-    </header>
+
     <!-- -------------------------------- main --------------------------------- -->
 
 
-    <main class="main" id="mainC">
-        <h2>Contacto</h2>
-        <!-- ---------------------------- mainFormulario ----------------------------- -->
-        <!--            FORMULARIO VIEJO
-             <section class="mainContacto">
-            <div class="formulario">
-                <form class="mainContactoFormulario" action="envio.php" method="post" id="contacto">
-                    <div class="mainContactoDatosPersonales">
-                        <fieldset>
-                            <legend>Datos personales</legend>
-                            <label for="nombre">Nombre y apellido</label>
-                            <input type="text" placeholder="Ana Maria Rosalez" name="nombre" id="nombre"> <br>
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="none@none.com" name="email" id="email">
-                            <br>
-                            <label for="Telefono de contacto">Telefono de contacto</label>
-                            <input type="Telefono de contacto" placeholder="00000" name="Telefono de contacto" id="Telefono de contacto">
-                        </fieldset>
+    <main class="main text-light mb-5 mt-5" id="mainC">
+
+
+        <!-- ---------------------------- Formulario ----------------------------- -->
+
+        <div>
+            <section class="col-lg-8 col-md-12">
+                <h2>Contacto</h2>
+                <div class=" FormBootstrap row g-3 text-light ">
+                    <div class="col ">
+                        <input type="text" class="form-control " placeholder="Nombre" aria-label="First name">
                     </div>
-                    <div class="mainContactoOrden">
-                        <fieldset>
-                            <legend>Selecciona tu orden</legend>
-                            <label for="Pizzas">Pizzas</label>
-                            <input type="checkbox" value="Pizzas" id="Pizzas" name="Pizzas">
-                            <br>
-                            <label for="Lomos">Lomos</label>
-                            <input type="checkbox" value="Lomos" name="Lomos" id="Lomos">
-                            <br>
-                            <label for="Empanadas">Empanadas</label>
-                            <input type="checkbox" value="Empanadas" name="Empanadas" id="Empanadas">
-                            <br>
-                            <label for="Curso /Catering">Informacion sobre Curso /Catering</label>
-                            <input type="checkbox" value="Curso /Catering" name="Curso /Catering" id="Curso /Catering">
-                        </fieldset>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+
                     </div>
-                    <div class="mainContactoEnvio">
-                        <fieldset>
-                            <legend>ENVIO</legend>
-
-                            <label for="domicilio">Envío a domicilio</label>
-                            <input type="radio" name="envio" value="domicilio" id="domicilio">
-                            <br>
-                            <label for="local">Retiro en el local</label>
-                            <input type="radio" name="envio" value="local" id="local">
-                            <br><br>
-                            <select name="localidad" id="localidad">
-                                <option value="Mza">Ciudad de Mendoza</option>
-                                <option value="Lujan"> Ciudad de Lujan de Cuyo</option>
-                                <option value="Maipu">Ciudad de Maipu </option>
-                            </select>
-                        </fieldset>
-                    </div>
-
-
-
-                    <div>
-                        <label for="mensaje">Deja tu mensaje</label><br>
-                        <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder=" Queres decirnos algo mas? aca podes hacerlo! "></textarea>
-                        <br>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Cancelar">
-                    </div>
-
-                </form>
-            </div>
-        </section> -->
-        <!-- --------------------------- comienza formulario ---------------------------- -->
-        <div class="row g-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
-        </div>
-        <form class="row g-3">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
                 </div>
-            </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-secondary">Sign in</button>
-            </div>
-        </form>
-        <!-- --------------------------- end formulario ---------------------------- -->
+                <form class="row g-3">
+                    <div class="col-12">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="aaa@aa.com" id="inputEmail4">
 
-        <!-- --------------------------- Mapa ---------------------------- -->
-    </main>
-    <div class="mainMap" id="mapa">
-        <h2 class="textoC"> Encontra nuestro Local </h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.086265306307!2d-68.85875217156762!3d-32.964089158178574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bac0d3b3eef%3A0xc761ef09c1a5cc10!2sLa%20Nueva%20Vera!5e0!3m2!1ses-419!2sar!4v1645655062608!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <!-- ends map -->
-    <section class="py-3 bg-dark">
-        <div class="container-fluid">
-            <div class="row">
+                    </div>
 
-                <article class="col lg-8">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Domicilio</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 calle ">
+                    </div>
 
-                </article>
-            </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Provincia</label>
+                        <select id="inputState" class="form-select">
+                <option selected>Elegir</option>
+                <option>Mendoza</option>
+                <option>San Juan</option>
+                <option>San Luis</option>
+                <option>Buenos Aires</option>
+            
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Cod area</label>
+                        <input type="text" class="form-control" placeholder="00000" id="inputZip">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="inputCity" class="form-label" placeholder="00000">celular</label>
+                        <input type="tel" class="form-control" placeholder="00000" id="inputCity">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="inputCity" class="form-label">telefono </label>
+                        <input type="text" class="form-control" placeholder="00000" id="inputCity">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input " type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                  Quiero recibir info y Promos
+                </label>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                    </div>
+            </section>
         </div>
-    </section>
+        
+    </main>
+    <!-- --------------------------- end formulario ---------------------------- -->
+    <!-- --------------------------- Mapa ---------------------------- -->
+    <div class="col-lg-4 col-me-12 mainMap " id="mapa">
+        <h class="textoC text-white"> Encontra nuestro Local </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.086265306307!2d-68.85875217156762!3d-32.964089158178574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bac0d3b3eef%3A0xc761ef09c1a5cc10!2sLa%20Nueva%20Vera!5e0!3m2!1ses-419!2sar!4v1645655062608!5m2!1ses-419!2sar"
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
-    <footer class="footer" id="footerC">
-        <h3>Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</h3>
+    <!-- ends map -->
+    
+
+    <footer class="footer text py-3" id="footerC">
+        <p> Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones </p> 
         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram">

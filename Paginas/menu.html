@@ -8,63 +8,182 @@
     <script src="https://kit.fontawesome.com/c275edd9db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
-<body id="contenedorM">
-    <header class="header" id="headerM">
+<body class="contenedorM">
+    <header class="header" id="headerM.">
         <!-- inicia nav -->
-        <nav>
-            <a href="../index.html" class="headerlogo">
-                <h1>La Nueva Vera Pizza</h1>
-            </a>
-            <ul class="headerLista">
-                <li><a href="../Paginas/menu.html"> Menu</a></li>
-                <li><a href="../Paginas/promociones.html">Promociones</a></li>
-                <li><a href="../Paginas/servicios.html">Servicios</a></li>
-                <li><a href="../Paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="../Paginas/contacto.html #contacto">Contacto</a></li>
-                <li><a href="https://www.coderhouse.com/" target="_blank">Coderhouse</a></li>
-            </ul>
+        <nav class="navbar sticky-top  navbar-expand-lg navbar-dark text-white bg-url(../img/fondo3.jpg)">
+            <div class="container-fluid">
+                <a class="navbar-brand headerlogo" href="../index.html" class="headerlogo">
+                    <h1>La Vera Pizza</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 headerLista">
+                        <li class="nav-item">
+                            <a class="nav-link text-white " aria-current="page" href="../Paginas/menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../Paginas/promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../Paginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../Paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../Paginas/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="https://www.coderhouse.com/" target="_blank">Coderhouse</a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!-- ends nav -->
 
 
     </header>
-    <div id="logoM"><img src="../img/header.jpg" alt="pizzas estilo italiano" width="100%"></div>
-    <div id="textoM">
+    <div id="logoM"><img src="../img/header006.jpg" alt="pizzas estilo italiano" width="100%"></div>
+    <div class="text-center my-5 bg-light" id="textoM">
         <h1>LA VERA PIZZA</h1>
         <h2>
-            <p>Aca podes encontrar nuestra carta completa.</p>
-            <p> Que lo disfrutes!!!</p>
+
+            <p> Productos destacados</p>
         </h2>
+
     </div>
-    <div id="menus">
-<<<<<<< HEAD
-        <img src="../img/menu1.png" alt="Menu">
-        <img src="../img/menu2.png" alt="Menu"></div>
-=======
-        <img class="carta" src="../img/menu1.png" alt="Menu">
-        <img class="carta" src="../img/menu2.png" alt="Menu"></div>
->>>>>>> animaciones
+    <div><img class="img-fluid" src="../img/LaVeraP.png" alt=""></div>
+    <!-- fin titulo -->
+
+    <!-- car1 -->
+    <section class="productos container-fluid mt-5 mb-5">
+        <div class="row justify-content-around">
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/menu.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Lomo Pizza</h5>
+                    <p class="card-text ">Lo mejor de los 2 mundos unidos en un increible sabor.</p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+
+            </div>
+            <!-- car2 -->
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/header004.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Hamburguesa Italiana</h5>
+                    <p class="card-text ">Porque si tiene un toque italiano, seguro es mejor</p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+            </div>
+            <!-- card3 -->
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/lomo.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Lomo Completo</h5>
+                    <p class="card-text ">Pan italiano, lomo veteado, tomates organicos. Solo lo mejor</p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+            </div>
+            <!-- card4 -->
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/header003.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Lomo a la Parrilla </h5>
+                    <p class="card-text ">Como solo el sabor de las brazas aromatizadas con sarmientos, tomillo ajo y aceite de oliva extra virgen. </p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+            </div>
+            <!-- card5 -->
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/header001.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Pizza Muzzarella</h5>
+                    <p class="card-text ">El clasico de siempre, con verdadera muzzarella de bufalla. Si no la probaste, no sabes de lo que te estas perdiendo</p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+            </div>
+            <!-- card6 -->
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/header001.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Empanadas Mendocinas</h5>
+                    <p class="card-text ">El sabr de tu t</p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+            </div>
+            <!-- card7 -->
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/header001.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+            </div>
+            <!-- card8 -->
+            <div class="card mb-5" style="width: 18rem; ">
+                <img src="../img/header001.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-danger ">Hace tu pedido</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- fin card -->
+
+    <div class="conteiner">
+        <div class="text-center mt-5 mb-5 bg-light" id="textoM">
+            <h2>
+                <p>Aca podes encontrar nuestra carta completa.</p>
+            </h2>
+        </div>
 
 
-    <footer class="footer" id="footerM">
-        <h3>Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</h3>
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram">
-        
-        </i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
-<<<<<<< HEAD
-        <p><img src="img/telefono.PNG" alt="llamanos" width="40rem"> Tel: 0261-4360653 / 0261 65656566
-=======
-        <p> Tel: 0261-4360653 / 0261 65656566
->>>>>>> animaciones
 
-        </p>
-    </footer>
+
+        <div class="row" id="menus ">
+            <!-- <img src="../img/menu1.png " alt="Menu ">
+            <img src="../img/menu2.png " alt="Menu "></div> -->
+            =======
+            <div><img class=" img-fluid img-thumbnail carta " src="../img/menu1.png " alt="Menu ">
+                <img class="carta " src="../img/menu2.png " alt="Menu "></div>
+        </div>
+
+
+
+
+
+
+        <footer class="footer py-3 bg-dark">
+            <p> Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</p>
+            <a href="https://facebook.com " target="_blank "><i class="fab fa-facebook-square "></i></a>
+            <a href="https://twitter.com " target="_blank "><i class="fab fa-twitter-square "></i></a>
+            <a href="https://www.instagram.com " target="_blank "><i class="fa-brands fa-instagram ">
+    
+    </i></a>
+            <a href="https://www.instagram.com " target="_blank "><i class="fa-brands fa-instagram "></i></a>
+            <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
+            <p> Tel: 0261-4360653 / 0261 65656566
+
+            </p>
+        </footer>
+        <!--  JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
 </body>
 
 </html>
