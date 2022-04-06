@@ -1,0 +1,36 @@
+//Media Queries Index
+@media (max-width: 768px) {
+    #logo {
+        display: flex;
+        justify-content: center;
+    }
+    #video {
+        margin-left: 0px;
+    }
+    #texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        justify-content: center;
+    }
+    #texto {
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    #video {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    #footer {
+        font-size: 20px;
+    }
+}
