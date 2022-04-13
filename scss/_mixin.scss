@@ -1,0 +1,26 @@
+//variables
+//map
+$fondos: ( 'base': rgba(0, 0, 0, .5), 'base2': #fff, 'base3': tomato, );
+//background: map-get($map: $fondos, $key: base);
+//variable footer
+$fb: rgb(55, 55, 160);
+$insta: rgb(134, 28, 87);
+$tw:rgb(110, 186, 216);
+$wp:rgb(106, 194, 106);
+$font: 'Montserrat',
+sans-serif;
+$background: rgba (0, 0, 0, .5);
+$color: #fff;
+//mixin redes sociales
+@mixin redesSociales ($hover) {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    background: map-get($map: $fondos, $key: base);
+    &:hover {
+        color: $hover;
+    }
+}

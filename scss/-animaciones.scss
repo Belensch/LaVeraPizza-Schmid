@@ -1,0 +1,79 @@
+.headerlogo:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+    transform: translate(5px, -5px);
+}
+
+.headerPromos:hover {
+    transform: translate(10px, -25px);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+@keyframes navAnim {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.headerLista li a:hover {
+    animation-name: navAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+.carta:hover {
+    transform: scale(1.5);
+    cursor: zoom-in;
+    transition: all 1s;
+    border-color: 2px #ff6347;
+}
+
+#textoM:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+}
+
+.logoPromo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.promoImg:hover {
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.servAnim:hover {
+    @extend #textoM;
+    transition: cubic-bezier(30px);
+}
+
+.servAnim img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.animate:hover {
+    @extend #textoM;
+}
+
+.mainContacto :hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+}

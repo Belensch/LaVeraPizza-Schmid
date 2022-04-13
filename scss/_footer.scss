@@ -1,7 +1,22 @@
 .footer {
+    background: map-get($map: $fondos, $key: base);
     text-align: center;
     color: #ffffff;
     text-decoration: none;
-    //background-color: rgba (0, 0, 0, .5);
-    background-color: black;
+}
+
+.fb {
+    @include redesSociales($fb);
+}
+
+.insta {
+    @include redesSociales($insta);
+}
+
+.tw {
+    @include redesSociales($tw);
+}
+
+.wp {
+    @include redesSociales($wp);
 }

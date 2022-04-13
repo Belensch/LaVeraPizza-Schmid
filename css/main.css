@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap);
 * {
   margin: 0px;
   padding: 0px;
@@ -10,7 +11,7 @@
 
 .header {
   background: url(img/header.jpg);
-  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   display: flex;
   flex-direction: column; }
@@ -37,10 +38,54 @@
           margin: 1em; }
 
 .footer {
+  background: rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #ffffff;
+  text-decoration: none; }
+
+.fb {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff;
   text-decoration: none;
-  background-color: black; }
+  background: rgba(0, 0, 0, 0.5); }
+  .fb:hover {
+    color: #3737a0; }
+
+.insta {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5); }
+  .insta:hover {
+    color: #861c57; }
+
+.tw {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5); }
+  .tw:hover {
+    color: #6ebad8; }
+
+.wp {
+  font-size: 30px;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5); }
+  .wp:hover {
+    color: #6ac26a; }
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -82,3 +127,64 @@ body {
     width: 100%; }
   #footer {
     font-size: 20px; } }
+
+.headerlogo:hover {
+  background-color: 0.5;
+  color: tomato;
+  transition: all 1s;
+  transform: translate(5px, -5px); }
+
+.headerPromos:hover {
+  transform: translate(10px, -25px);
+  cursor: pointer;
+  transition: transform 2s; }
+
+.logo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 2s; }
+
+@keyframes navAnim {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.headerLista li a:hover {
+  animation-name: navAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease; }
+
+.carta:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+  transition: all 1s;
+  border-color: 2px #ff6347; }
+
+#textoM:hover, .servAnim:hover, .animate:hover {
+  background-color: 0.5;
+  color: tomato;
+  transition: all 1s; }
+
+.logoPromo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 2s; }
+
+.promoImg:hover {
+  transform: rotatey(360deg);
+  cursor: pointer;
+  transition: all 1s; }
+
+.servAnim:hover {
+  transition: cubic-bezier(30px); }
+
+.servAnim img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 2s; }
+
+.mainContacto :hover {
+  background-color: 0.5;
+  color: tomato;
+  transition: all 1s; }

@@ -1,7 +1,6 @@
     .header {
         background: url(img/header.jpg);
-        // NO LO TOMA. Porque???? background: rgba(0, 0, 0, .5) 
-        background-color: black;
+        background: map-get($map: $fondos, $key: base);
         text-decoration: none;
         display: flex;
         flex-direction: column;
