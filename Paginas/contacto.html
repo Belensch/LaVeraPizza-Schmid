@@ -4,19 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA VERA PIZZA. Pizzas con estilo italiano</title>
-    <script src="https://kit.fontawesome.com/c275edd9db.js" crossorigin="anonymous"></script>
+    <title>LA VERA PIZZA. Pizzas con estilo italiano en Mendoza</title>
+    <meta name="description" content="Encuentra las mejores pizzas italianas en Mendoza, lomos, empanadas, hamburguesas, lomospizzas, panchos. La mejor calidad, precios y sabor inigualables. Plus: delivery, catering para eventos y cursos gastronomicos">
+    <meta name="keywords" content="pizza, piza, lomos, empanadas, papas fritas, catering, eventos, curso, maridaje, cocina italiana, delivery, Mendoza">
+    <meta name="author" content="H. M. Belen Schmid Diaz">
+    <meta name="copyright" content="La Vera Pizza SRL copyright 2022">
+    <script src="https://kit.fontawesome.com/c275edd9db.js" crossorigin="anonymous">
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
 </head>
 
-<body id="contenedorC">
-    <header class="header" id="headerC">
 
-        <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-url(../img/fondo3.jpg)">
+
+
+<body id="contenedorC">
+    <header class="header" id="headerM.">
+        <!-- inicia nav -->
+        <nav class="navbar sticky-top  navbar-expand-lg navbar-dark text-white bg-url(../img/fondo3.jpg)">
             <div class="container-fluid">
                 <a class="navbar-brand headerlogo" href="../index.html" class="headerlogo">
                     <h1>La Vera Pizza</h1>
@@ -26,22 +35,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 headerLista">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../Paginas/menu.html">Menu</a>
+                            <a class="nav-link text-white " aria-current="page" href="../Paginas/menu.html">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../Paginas/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/promociones.html">Promociones</a>
+                            <a class="nav-link text-white" aria-current="page" href="../Paginas/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../Paginas/nosotros.html">Nosotros</a>
+                            <a class="nav-link text-white" aria-current="page" href="../Paginas/servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../Paginas/contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="../Paginas/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="https://www.coderhouse.com/" target="_blank">Coderhouse</a>
+                            <a class="nav-link text-white" aria-current="page" href="https://www.coderhouse.com/" target="_blank">Coderhouse</a>
                         </li>
                     </ul>
                     </li>
@@ -49,6 +56,9 @@
                 </div>
             </div>
         </nav>
+
+
+
     </header>
 
     <!-- ends nav -->
@@ -57,43 +67,47 @@
     <!-- -------------------------------- main --------------------------------- -->
 
 
-    <main class="main text-light mb-5 mt-5" id="mainC">
+    <div class="">
+        <div class="p-10"><img src="../img/callUs.PNG" class="w-50 card-img-top" alt="Logo La Vera Pizza "></div>
 
 
-        <!-- ---------------------------- Formulario ----------------------------- -->
+        <main class="main conteiner-fluid text-light m-5 " id="mainC ">
 
-        <div>
-            <section class="col-lg-8 col-md-12">
-                <h2>Contacto</h2>
-                <div class=" FormBootstrap row g-3 text-light ">
-                    <div class="col ">
-                        <input type="text" class="form-control " placeholder="Nombre" aria-label="First name">
+
+            <!-- ---------------------------- Formulario ----------------------------- -->
+
+            <div class="row">
+                <section class="col-lg-5 col-md-12">
+                    <h2>Contacto</h2>
+                    <div class=" FormBootstrap  g-3 text-light ">
+                        <div class="col ">
+                            <input type="text " class="form-control " placeholder="Nombre " aria-label="First name ">
+                        </div>
+                        <div class="col ">
+                            <input type="text " class="form-control " placeholder="Apellido " aria-label="Last name ">
+
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    <form class="row g-3 ">
+                        <div class="col-12 ">
+                            <label for="inputEmail4 " class="form-label ">Email</label>
+                            <input type="email " class="form-control " placeholder="aaa@aa.com " id="inputEmail4 ">
 
-                    </div>
-                </div>
-                <form class="row g-3">
-                    <div class="col-12">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="aaa@aa.com" id="inputEmail4">
+                        </div>
 
-                    </div>
-
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Domicilio</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 calle ">
-                    </div>
+                        <div class="col-12 ">
+                            <label for="inputAddress " class="form-label ">Domicilio</label>
+                            <input type="text " class="form-control " id="inputAddress " placeholder="1234 calle ">
+                        </div>
 
 
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputState" class="form-label">Provincia</label>
-                        <select id="inputState" class="form-select">
+                        <div class="col-md-6 ">
+                            <label for="inputCity " class="form-label ">Ciudad</label>
+                            <input type="text " class="form-control " id="inputCity ">
+                        </div>
+                        <div class="col-md-6 ">
+                            <label for="inputState " class="form-label ">Provincia</label>
+                            <select id="inputState " class="form-select ">
                 <option selected>Elegir</option>
                 <option>Mendoza</option>
                 <option>San Juan</option>
@@ -102,61 +116,64 @@
             
                     </div>
 
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Cod area</label>
-                        <input type="text" class="form-control" placeholder="00000" id="inputZip">
+                    <div class="col-md-2 ">
+                        <label for="inputZip " class="form-label ">Cod area</label>
+                        <input type="text " class="form-control " placeholder="00000 " id="inputZip ">
                     </div>
-                    <div class="col-md-5">
-                        <label for="inputCity" class="form-label" placeholder="00000">celular</label>
-                        <input type="tel" class="form-control" placeholder="00000" id="inputCity">
+                    <div class="col-md-5 ">
+                        <label for="inputCity " class="form-label " placeholder="00000 ">celular</label>
+                        <input type="tel " class="form-control " placeholder="00000 " id="inputCity ">
                     </div>
-                    <div class="col-md-5">
-                        <label for="inputCity" class="form-label">telefono </label>
-                        <input type="text" class="form-control" placeholder="00000" id="inputCity">
+                    <div class="col-md-5 ">
+                        <label for="inputCity " class="form-label ">telefono </label>
+                        <input type="text " class="form-control " placeholder="00000 " id="inputCity ">
                     </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input " type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
+                    <div class="col-12 ">
+                        <div class="form-check ">
+                            <input class="form-check-input " type="checkbox " id="gridCheck ">
+                            <label class="form-check-label " for="gridCheck ">
                   Quiero recibir info y Promos
                 </label>
                         </div>
                         
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                    <div class="col-12 ">
+                        <button type="submit " class="btn btn-secondary ">Enviar</button>
                     </div>
-            </section>
-        </div>
-        
+            </section>  
+            <!--  map -->
+              <div class="col-lg-4 col-md-6 mainMap m-5 " id="mapa ">
+                <h3 class="textoC text-white"> Encontra nuestro Local: </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.086265306307!2d-68.85875217156762!3d-32.964089158178574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bac0d3b3eef%3A0xc761ef09c1a5cc10!2sLa%20Nueva%20Vera!5e0!3m2!1ses-419!2sar!4v1645655062608!5m2!1ses-419!2sar "
+                    width="600 " height="400 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+            </div> 
+        </div> 
     </main>
-    <!-- --------------------------- end formulario ---------------------------- -->
-    <!-- --------------------------- Mapa ---------------------------- -->
-    <div class="col-lg-4 col-me-12 mainMap " id="mapa">
-        <h class="textoC text-white"> Encontra nuestro Local </h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4734.086265306307!2d-68.85875217156762!3d-32.964089158178574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0bac0d3b3eef%3A0xc761ef09c1a5cc10!2sLa%20Nueva%20Vera!5e0!3m2!1ses-419!2sar!4v1645655062608!5m2!1ses-419!2sar"
-            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+
 
     <!-- ends map -->
     
 
-    <footer class="footer text py-3" id="footerC">
-        <p> Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones </p> 
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram">
-        
-        </i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
+    <footer class="footer py-3 " id="footer">
+        <p> Seguinos en nuestras redes sociales y enterate al instante de nuestras novedades y promociones</p>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fb"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter tw"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram insta"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp wp"></i></a>
 
+
+        <p>San Martin 7978, Carrodilla, Lujan de Cuyo. Mendoza</p>
         <p> Tel: 0261-4360653 / 0261 65656566
 
         </p>
+        <hr>
+        <p>Desarrollado por Belen Schmid. Derechos reservados</p>
     </footer>
-    <!--  JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- -------------------------------end footer -------------------------------- -->
+</div>
+<!--  JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 

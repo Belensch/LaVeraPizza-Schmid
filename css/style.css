@@ -54,71 +54,12 @@
      display: flex;
      height: 20%;
  }
- /* .headerPromos img {
-     display: flex;
-     width: 100%;
-     margin-top: 20px;
- } */
- 
- .MainVideo {
-     display: flex;
-     width: 100;
- }
  
  .texto {
      color: white;
      justify-content: center;
      margin: 10px;
  }
- /* --------------------------------- INDEX GRID --------------------------------- */
- /* .padre {
-     display: grid;
-     grid-template-columns: 30% 50% 20%;
-     grid-template-rows: auto;
-     grid-template-areas: "header header header" ". logo ." ". logo aside" " texto video aside" ". . aside" "footer footer footer";
- }
- 
- header {
-     grid-area: header;
-     grid-column-start: 1;
-     grid-column-end: -1;
-     background-size: cover;
- }
- 
- #logo {
-     grid-area: logo;
-     display: flex;
-     flex-direction: column;
-     margin: 30px;
- }
- 
- #aside {
-     grid-area: aside;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     gap: 20px;
-     width: 100%;
-     flex-direction: column;
-     margin-bottom: 10px;
- }
- 
- #video {
-     grid-area: video;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-bottom: 20px;
- }
- 
- #texto {
-     grid-area: texto;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     text-align: center;
-     justify-content: center;
- } */
  
  #footer {
      grid-area: footer;
@@ -126,72 +67,6 @@
  
  .contedido {
      display: flex;
- }
- 
- .headerPromos {
-     display: flex;
-     align-items: center;
- }
- 
- .MainVideo {
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
- @media (max-width: 768px) {
-     /* .padre {
-         grid-template-columns: 60% 40%;
-         grid-template-rows: auto;
-         grid-template-areas: "header header" "logo aside" "video aside" "texto texto" "footer footer";
-     } */
-     #logo {
-         display: flex;
-         justify-content: center;
-     }
-     #aside {
-         display: flex;
-         flex-direction: column;
-     }
-     #video {
-         margin-left: 20px;
-     }
-     #texto {
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         margin: 50px 50px;
-         font-size: 20px;
-     }
- }
- 
- @media (max-width: 480px) {
-     /* .padre {
-         grid-template-columns: auto;
-         grid-template-rows: auto;
-         grid-template-areas: "header" "logo" "video" "texto" "aside" "footer";
-     } */
-     #logo {
-         justify-content: center;
-     }
-     #texto {
-         justify-content: center;
-         text-align: center;
-         font-size: 30px;
-     }
-     #video {
-         justify-content: center;
-         text-align: center;
-         width: 100%;
-     }
-     #aside {
-         display: flex;
-         width: 50%;
-         margin-left: 30%;
-     }
-     #footer {
-         font-size: 20px;
-     }
  }
  /* ---------------------------------- CONTACTO --------------------------------- */
  
@@ -206,155 +81,6 @@
      color: #ffffff;
      text-decoration: none;
      background: rgb(0, 0, 0, .5);
- }
- /* --------------------------------- PROMOCIONES GRIT--------------------------------- */
- 
- .contenedorPromo {
-     display: grid;
-     grid-template-columns: 25% 40% 35%;
-     grid-template-rows: auto;
-     grid-template-areas: "headerP headerP headerP" ". logoP ." " . titulo ." " tabla1 tabla2 tabla3" ". img ." "footerP footerP footerP";
- }
- 
- #headerPromo {
-     grid-area: headerP;
-     display: flex;
-     grid-column-start: 1;
- }
- 
- #logoPromo {
-     grid-area: logoP;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
- }
- 
- #titulo {
-     grid-area: titulo;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     text-align: center;
-     padding: 50px;
-     text-align: justify;
-     font-size: 20PX;
- }
- 
- #promoImg {
-     grid-area: img;
- }
- 
- #tabla1 {
-     grid-area: tabla1;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
- #tabla2 {
-     grid-area: tabla2;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
- #tabla3 {
-     grid-area: tabla3;
-     display: flex;
-     align-items: center;
-     justify-content: stretch;
- }
- 
- #footerPromo {
-     grid-area: footerP;
- }
- /* responsive PRMOCIONES */
- 
- @media (max-width: 768px) {
-     .contenedorPromo {
-         grid-template-columns: 50vw 50vw;
-         grid-template-rows: auto;
-         grid-template-areas: "headerP headerP" "logoP img" "titulo tabla1" "tabla3 tabla2" "footerP footerP";
-     }
-     #logoP {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-     }
-     #img {
-         display: flex;
-         flex-direction: column;
-         width: 60%
-     }
-     #titulo {
-         flex-direction: row;
-         justify-content: space-evenly;
-         flex-wrap: wrap;
-     }
-     #tabla1 {
-         display: flex;
-         align-items: center;
-     }
-     #tabla2 {
-         display: flex;
-     }
-     #tabla3 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #footerP {
-         display: flex;
-         flex-direction: row;
-     }
- }
- 
- @media (max-width: 480px) {
-     .contenedorPromo {
-         grid-template-columns: auto;
-         grid-template-rows: auto;
-         grid-template-areas: "headerP" "logoP" "titulo" "tabla1" "tabla2" "tabla3" "img" "footerP";
-         font-size: 20px;
-     }
-     #headerP {
-         display: flex;
-     }
-     #logoP {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 20%;
-     }
-     #promoImg img {
-         width: 70%;
-         margin-left: 30px;
-         margin-bottom: 10px;
-     }
-     #titulo {
-         font-size: 20px;
-         justify-content: center;
-     }
-     #tabla1 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #tabla2 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #tabla3 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #footerP {
-         display: flex;
-         flex-direction: row;
-         font-size: 18;
-     }
  }
  /* --------------------------------- Contacto GRIT--------------------------------- */
  
@@ -417,7 +143,7 @@
  
  .contenedorM {
      background-image: url(../img/fondo2.PNG);
-     background-size: auto
+     background-size: auto;
  }
  
  #contenedorM {
@@ -488,69 +214,11 @@
      margin-top: 20px;
  }
  
- .MainVideo {
-     display: flex;
-     width: 90%;
- }
- 
  .texto {
      justify-content: center;
      margin: 10px;
  }
  /* --------------------------------- INDEX GRID --------------------------------- */
- /* .padre {
-     display: grid;
-     align-items: start grid-template-columns: 30% 50% 20%;
-     grid-template-rows: auto;
-     grid-template-areas: "header header header" ". logo ." ". logo aside" " texto video aside" ". . aside" "footer footer footer";
- }
- 
- #header {
-     grid-area: header;
-     grid-column-start: 1;
-     grid-column-end: -1;
-     background-size: cover;
- }
- 
- #logo {
-     grid-area: logo;
-     display: flex;
-     flex-direction: column;
-     margin: 30px;
- }
- 
- #aside {
-     grid-area: aside;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     gap: 20px;
-     width: 100%;
-     flex-direction: column;
-     margin-bottom: 10px;
- }
- 
- #video {
-     grid-area: video;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-bottom: 20px;
- }
- 
- #texto {
-     grid-area: texto;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     text-align: center;
-     justify-content: center;
- }
- 
- #footer {
-     grid-area: footer;
- }
-  */
  
  .contedido {
      display: flex;
@@ -561,18 +229,7 @@
      align-items: center;
  }
  
- .MainVideo {
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
  @media (max-width: 768px) {
-     /* .padre {
-         grid-template-columns: 60% 40%;
-         grid-template-rows: auto;
-         grid-template-areas: "header header" "logo aside" "video aside" "texto texto" "footer footer";
-     } */
      #logo {
          display: flex;
          justify-content: center;
@@ -584,21 +241,9 @@
      #video {
          margin-left: 20px;
      }
-     /* #texto {
-         display: flex;
-         justify-content: center;
-         text-align: center;
-         margin: 50px 50px;
-         font-size: 20px;
-     } */
  }
  
  @media (max-width: 480px) {
-     /* .padre {
-         grid-template-columns: auto;
-         grid-template-rows: auto;
-         grid-template-areas: "header" "logo" "video" "texto" "aside" "footer";
-     } */
      #logo {
          justify-content: center;
      }
@@ -634,155 +279,6 @@
      color: #ffffff;
      text-decoration: none;
      background: rgb(0, 0, 0, .5);
- }
- /* --------------------------------- PROMOCIONES GRIT--------------------------------- */
- 
- .contenedorPromo {
-     display: grid;
-     grid-template-columns: 25% 40% 35%;
-     grid-template-rows: auto;
-     grid-template-areas: "headerP headerP headerP" ". logoP ." " . titulo ." " tabla1 tabla2 tabla3" ". img ." "footerP footerP footerP";
- }
- 
- #headerPromo {
-     grid-area: headerP;
-     display: flex;
-     grid-column-start: 1;
- }
- 
- #logoPromo {
-     grid-area: logoP;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
- }
- 
- #titulo {
-     grid-area: titulo;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     text-align: center;
-     padding: 50px;
-     text-align: justify;
-     font-size: 20PX;
- }
- 
- #promoImg {
-     grid-area: img;
- }
- 
- #tabla1 {
-     grid-area: tabla1;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
- #tabla2 {
-     grid-area: tabla2;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
- #tabla3 {
-     grid-area: tabla3;
-     display: flex;
-     align-items: center;
-     justify-content: stretch;
- }
- 
- #footerPromo {
-     grid-area: footerP;
- }
- /* responsive PRMOCIONES */
- 
- @media (max-width: 768px) {
-     .contenedorPromo {
-         grid-template-columns: 50vw 50vw;
-         grid-template-rows: auto;
-         grid-template-areas: "headerP headerP" "logoP img" "titulo tabla1" "tabla3 tabla2" "footerP footerP";
-     }
-     #logoP {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-     }
-     #img {
-         display: flex;
-         flex-direction: column;
-         width: 60%
-     }
-     #titulo {
-         flex-direction: row;
-         justify-content: space-evenly;
-         flex-wrap: wrap;
-     }
-     #tabla1 {
-         display: flex;
-         align-items: center;
-     }
-     #tabla2 {
-         display: flex;
-     }
-     #tabla3 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #footerP {
-         display: flex;
-         flex-direction: row;
-     }
- }
- 
- @media (max-width: 480px) {
-     .contenedorPromo {
-         grid-template-columns: auto;
-         grid-template-rows: auto;
-         grid-template-areas: "headerP" "logoP" "titulo" "tabla1" "tabla2" "tabla3" "img" "footerP";
-         font-size: 20px;
-     }
-     #headerP {
-         display: flex;
-     }
-     #logoP {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         width: 20%;
-     }
-     #promoImg img {
-         width: 70%;
-         margin-left: 30px;
-         margin-bottom: 10px;
-     }
-     #titulo {
-         font-size: 20px;
-         justify-content: center;
-     }
-     #tabla1 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #tabla2 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #tabla3 {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
-     #footerP {
-         display: flex;
-         flex-direction: row;
-         font-size: 18;
-     }
  }
  /* --------------------------------- Contacto GRIT--------------------------------- */
  
@@ -840,7 +336,6 @@
          grid-template-areas: "headerC " "mapa " "mainC" "footerC";
      }
  }
- /* --------------------------------- NOSOTROS--------------------------------- */
  /* --------------------------------- ANIMACIONES--------------------------------- */
  
  .headerlogo:hover {
@@ -860,12 +355,6 @@
      transform: scale(1.1);
      cursor: pointer;
      transition: transform 2s;
- }
- 
- .texto:hover {
-     background-color: 0.5;
-     color: tomato;
-     transition: all 1s;
  }
  
  @keyframes navAnim {

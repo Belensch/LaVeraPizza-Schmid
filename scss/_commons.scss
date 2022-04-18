@@ -1,12 +1,17 @@
-//Variables globales
-@import url(https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap);
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff
-}
-
-.nav-link {
-    color: #ffffff;
-}
+    //Variables globales
+    @import url(https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap);
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff
+    }
+    
+    .nav-link {
+        color: #ffffff;
+    }
+    
+    .contenedorM {
+        background-image: url(../img/fondo2.PNG);
+        background-size: auto;
+    }
