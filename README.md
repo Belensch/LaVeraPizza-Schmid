@@ -9,3 +9,4 @@ Subida de bootstrap y animaciones para segunda entrega de proyecto final. Aplica
 Creacion Git Ignore
 Incorporacion de SASS (scss)
 Aplicacion de mapa, mixin y extend, utilizando kay words (SASS).
+Subida de PROYECTO completo, para su evaluacion, antes de entrega final
