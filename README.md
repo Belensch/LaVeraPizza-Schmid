@@ -10,3 +10,4 @@ Creacion Git Ignore
 Incorporacion de SASS (scss)
 Aplicacion de mapa, mixin y extend, utilizando kay words (SASS).
 Subida de PROYECTO completo, para su evaluacion, antes de entrega final
+Imageles comprimidas correctamente
