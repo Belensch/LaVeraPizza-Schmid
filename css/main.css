@@ -1,190 +1,246 @@
 @import url(https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap);
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff; }
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
 
 .nav-link {
-  color: #ffffff; }
+    color: #ffffff;
+}
 
 .header {
-  background: url(img/header.jpg);
-  background: rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-  display: flex;
-  flex-direction: column; }
-  .header nav {
+    background: url(img/header.jpg);
+    background: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.header nav {
     display: flex;
     align-items: center;
-    text-decoration: none; }
-    .header nav .headerlogo {
-      text-align: center;
-      font-size: 20px;
-      color: white;
-      text-decoration: none; }
-      .header nav .headerlogo h1:hover {
-        background-color: 0.5;
-        color: tomato;
-        transition: all 1s;
-        transform: translate(5px, -5px); }
-      .header nav .headerlogo div ul {
-        display: flex;
-        text-decoration: none; }
-        .header nav .headerlogo div ul li {
-          display: inline-block;
-          padding: 10px;
-          margin: 1em; }
+    text-decoration: none;
+}
+
+.header nav .headerlogo {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header nav .headerlogo h1:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+    transform: translate(5px, -5px);
+}
+
+.header nav .headerlogo div ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.header nav .headerlogo div ul li {
+    display: inline-block;
+    padding: 10px;
+    margin: 1em;
+}
 
 .footer {
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none; }
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+}
 
 .fb {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5); }
-  .fb:hover {
-    color: #3737a0; }
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fb:hover {
+    color: #3737a0;
+}
 
 .insta {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5); }
-  .insta:hover {
-    color: #861c57; }
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.insta:hover {
+    color: #861c57;
+}
 
 .tw {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5); }
-  .tw:hover {
-    color: #6ebad8; }
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.tw:hover {
+    color: #6ebad8;
+}
 
 .wp {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.5); }
-  .wp:hover {
-    color: #6ac26a; }
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.wp:hover {
+    color: #6ac26a;
+}
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background: url(../img/fondo3.jpg);
-  background-size: cover;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none; }
+    font-family: 'Montserrat', sans-serif;
+    background: url(../img/fondo3.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .carousel {
-  justify-content: center; }
-  .carousel .carousel slide {
+    justify-content: center;
+}
+
+.carousel .carousel slide {
     display: flex;
-    height: 20%; }
+    height: 20%;
+}
 
 @media (max-width: 768px) {
-  #logo {
-    display: flex;
-    justify-content: center; }
-  #video {
-    margin-left: 0px; }
-  #texto {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 50px 50px;
-    font-size: 20px; } }
+    #logo {
+        display: flex;
+        justify-content: center;
+    }
+    #video {
+        margin-left: 0px;
+    }
+    #texto {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 50px;
+        font-size: 20px;
+    }
+}
 
 @media (max-width: 480px) {
-  #logo {
-    justify-content: center; }
-  #texto {
-    justify-content: center;
-    text-align: center;
-    font-size: 30px; }
-  #video {
-    justify-content: center;
-    text-align: center;
-    width: 100%; }
-  #footer {
-    font-size: 20px; } }
+    #logo {
+        justify-content: center;
+    }
+    #texto {
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    #video {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    #footer {
+        font-size: 20px;
+    }
+}
 
 .headerlogo:hover {
-  background-color: 0.5;
-  color: tomato;
-  transition: all 1s;
-  transform: translate(5px, -5px); }
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+    transform: translate(5px, -5px);
+}
 
 .headerPromos:hover {
-  transform: translate(10px, -25px);
-  cursor: pointer;
-  transition: transform 2s; }
+    transform: translate(10px, -25px);
+    cursor: pointer;
+    transition: transform 2s;
+}
 
 .logo:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  transition: transform 2s; }
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
 
 @keyframes navAnim {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .headerLista li a:hover {
-  animation-name: navAnim;
-  animation-duration: 2s;
-  animation-timing-function: ease; }
+    animation-name: navAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
 
 .carta:hover {
-  transform: scale(1.5);
-  cursor: zoom-in;
-  transition: all 1s;
-  border-color: 2px #ff6347; }
+    transform: scale(1.5);
+    cursor: zoom-in;
+    transition: all 1s;
+    border-color: 2px #ff6347;
+}
 
-#textoM:hover, .servAnim:hover, .animate:hover {
-  background-color: 0.5;
-  color: tomato;
-  transition: all 1s; }
+#textoM:hover,
+.servAnim:hover,
+.animate:hover {
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+}
 
 .logoPromo:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  transition: transform 2s; }
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
 
 .promoImg:hover {
-  transform: rotatey(360deg);
-  cursor: pointer;
-  transition: all 1s; }
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: all 1s;
+}
 
 .servAnim:hover {
-  transition: cubic-bezier(30px); }
+    transition: cubic-bezier(30px);
+}
 
 .servAnim img:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-  transition: transform 2s; }
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 2s;
+}
 
 .mainContacto :hover {
-  background-color: 0.5;
-  color: tomato;
-  transition: all 1s; }
+    background-color: 0.5;
+    color: tomato;
+    transition: all 1s;
+}
